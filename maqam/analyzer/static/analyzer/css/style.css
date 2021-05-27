@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kufam', cursive;
+}
+body{
+    background: #fcfcfc;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    
+
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+hr{
+    height:1px;
+    border-width:0;
+    color:#3B271D;
+    background-color:#3B271D;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.white-background{
+    background: #fff;
+    position: fixed;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+.logo img{
+    
+    width: 100px;
+    height: 80px;
+}
+.navbar .logo img{
+    margin-left: -100px;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.add{
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.add .small-container{
+    text-align: center;
+    
+}
+.add .container .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #3B271D;
+}
+.title::after{
+    content: '';
+    background: #EFE0BB;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 40px 20px;
+}
+.wrapper .title{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.wrapper .form{
+    width: 100%;
+} 
+.upload-box{
+    
+    border-radius: 50px;
+    width: 350px;
+    outline: none;
+}
+input[type="file"] {
+    display: none;
+}
+.mic{
+    margin-top: 5px;
+    width: 35px; 
+    height: 35px;
+}
+
+.submit-button{
+    width: 100px;
+    height: 50px;
+    border: none;
+    color: white;
+    background-color: #3B271D;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 0 #AF734A;
+    outline: none;
+
+}
+.submit-button:hover{
+    background: #AF734A;
+}
+::-webkit-file-upload-button{
+    color: white;
+    background: #3B271D;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 0 1px 1px #6b4559;
+    outline: none;
+}
+::-webkit-file-upload-button:hover{
+    background: #AF734A;
+}
+.wrapper .form .inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    
+    align-items: center;
+}
+.row{
+    display: flex;
+    justify-content:left;
+    margin-top: 50px;
+    align-items: center;
+    
+}
+.inputfield img{
+    width: 100px;
+    height: 50px;
+}
+object:hover{
+    fill:  #AF734A;
+}
+.wrapper .form .inputfield label{
+     width: 200px;
+     color: #757575;
+     margin-right: 10px;
+    font-size: 14px;
+}
+  
+.wrapper .form .inputfield .input,
+.wrapper .form .inputfield .textarea{
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+  
+.wrapper .form .inputfield .textarea{
+    width: 100%;
+    height: 125px;
+    resize: none;
+}
+  
+.wrapper .form .inputfield .custom_select{
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+  
+.wrapper .form .inputfield .custom_select:before{
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+  
+.wrapper .form .inputfield .custom_select select{
+    -webkit-appearance: none;
+    -moz-appearance:   none;
+    appearance:        none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #d5dbd9;
+    border-radius: 3px;
+}
+  
+  
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .textarea:focus,
+.wrapper .form .inputfield .custom_select select:focus{
+    border: 1px solid #005CC8;
+}
+  
+.wrapper .form .inputfield p{
+     font-size: 14px;
+     color: #757575;
+}
+.wrapper .form .inputfield .check{
+    width: 100%;
+    padding: 8px 10px;
+    position: relative;
+    display: flex;
+    
+    cursor: pointer;
+}
+.wrapper .form .inputfield input{
+    width: 100%;
+    padding: 8px 10px;
+    
+}
+.wrapper .form .inputfield .check input{
+    width: 25px;
+    height: 25px;
+    margin-left: -10px;
+}
+ 
+.wrapper .form .inputfield .btn{
+    width: 100%;
+    font-size: 15px; 
+    border: 0px;
+    background:  #005CC8;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+  
+.wrapper .form .inputfield .btn:hover{
+    background: #333
+}
+  
+.wrapper .form .inputfield:last-child{
+    margin-bottom: 0;
+}
+table{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #bdc3c7;
+}
+tr{
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+th,td{
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+#tableHeader{
+    background-color: #005CC8;
+    color: #fff;
+}
+.tableRow:hover{
+    background-color: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2), -1px -1px 8px rgba(0, 0, 0, 0.2);
+}
+.wrapper table{
+    align-items: center;
+}
+.audio{
+    width: 400px;
+    height: 600px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid #757575;
+    margin: 50px auto;
+}
+.audio audio{
+    outline: none;
+}
+
+.footer{
+    background: #3B271D;
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+ 
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.footer-content h3{
+    font-size: 28.8px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 48px;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 48px 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+a img{
+    width: 25px;
+    height: 25px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+.footer-bottom{
+    background: #000000;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+}
+
+/*---------------- media query for menu -----*/
+
+@media only screen and (max-width: 800px){
+    
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+    
+}
+
+
+
+/*---------------- media query for less 600 screan size -----*/
+
+@media only screen and (max-width: 600px){
+    
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+    
+}
+
+/*---------------- media query for table -----*/
+@media (max-width:420px) {
+    .wrapper .form .inputfield{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper .form .inputfield label{
+        margin-bottom: 5px;
+    }
+    .wrapper .form .inputfield.terms{
+        flex-direction: row;
+    }
+} 
